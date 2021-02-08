@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		 <link href="css/tailwind.css" rel="stylesheet"> 
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+
+        {% block javascripts %}{% endblock %}
+        {% block variables %} {% endblock %}
+     </head>
+    <body> 
+    	
+     <div id="app" class="bg-gray-50 h-full w-full min-h-screen mb-2">
+
+
+        {% block body %}
+
+        {% endblock %}
+            	
+        </div>	
+        <script src="js/vue.js"></script>
+        
+           <script >
+        const myApp = Vue.createApp(
+        	{
+			  data() {
+			    return {
+			      counter: 0,
+			      showDetails:false,
+			      filterCriteria: {
+			      	city: '',
+					name: '',
+					zip: '',
+			      }
+			    }
+			  },
+
+			})
+
+		</script>
+		<script src="js/address.js"> </script> 
+ 		<script src="js/address1.js"> </script>  
+ 		<script src="js/addressbook.js"> </script>  
+		<script>
+		myApp.mount('#app')
+
+        </script>
+    </body>
+</html>
