@@ -11,7 +11,7 @@
 #4 Install SQLITE 
     https://www.sqlitetutorial.net/download-install-sqlite/
 	https://www.sqlite.org/2021/sqlite-tools-win32-x86-3340100.zip
-	If you have just installed the SQLITE, Don't forget to uncomment the sqlite driver for php. 
+	If you have just installed the SQLITE, don't forget to uncomment the sqlite driver for php. 
 	It should be something like follwoing in php.ini file localed at php folder. To determine where 
 	the location of php: you can use the command ,,where php".  
 	;extension=pdo_pgsql
