@@ -14,8 +14,10 @@ use Symfony\Component\Serializer\Normalizer\GetSetMethodNormalizer;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 class AddressbookController extends AbstractController
 {
-    #[Route('/addressbook', name: 'addressbook')]
-   
+    /**
+     * @Route("/addressbook", name="addressbook")
+     */
+  
     public function index(  string $uploadDir): Response
     {
          $repository = $this->getDoctrine()->getRepository(Addressbook::class);
@@ -33,7 +35,7 @@ class AddressbookController extends AbstractController
    		 //$json = $serializer->serialize($entity, 'json');
     		$mdata = $serializer->normalize($addresses);
     		 // dd($mdata);
-
+    		
         return $this->render('addressbook/index.html.twig', 
         	[
             'controller_name' => 'AddressbookController',
@@ -62,15 +64,6 @@ class AddressbookController extends AbstractController
         // in the template, print things with {{ product.name }}
         // return $this->render('product/show.html.twig', ['product' => $product]);
     }
-    public function addressbook(): Response
-    {
-       $repository = $this->getDoctrine()->getRepository(Addressbook::class);
-
-        $addressbook = $this->getDoctrine()
-            ->getRepository(Addressbook::class)
-            ->findAll();
-        return $this->json($addressbook[0]->getFirstname());
- 
-    }
+   
   
 }

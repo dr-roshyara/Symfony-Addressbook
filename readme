@@ -1,10 +1,13 @@
 #1 Clone the Git repository 
-git clone git@github.com:mathematikboy/Symfony-Addressbook.git
+	git clone git@github.com:mathematikboy/Symfony-Addressbook.git
 #1 Install PHP if not installed 
    https://www.php.net/manual/en/install.php
+
 #2 Install composer if you haven't installed it. 
+
 #3 Install SQLITE 
     https://www.sqlitetutorial.net/download-install-sqlite/
+	https://www.sqlite.org/2021/sqlite-tools-win32-x86-3340100.zip
 
 #4 Go to the project folder Symfony-Addressbook 
 

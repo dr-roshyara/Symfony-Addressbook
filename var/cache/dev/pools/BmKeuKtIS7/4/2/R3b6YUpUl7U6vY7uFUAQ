@@ -1,0 +1,60 @@
+<?php //App_Entity_Addressbook
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Addressbook',
+                'id',
+                'firstname',
+                'lastname',
+                'phonenumber',
+                'steet',
+                'street',
+                'housenumber',
+                'zip',
+                'city',
+                'country',
+                'birthday',
+                'email',
+                'picture',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'firstname' => $o[2],
+                    'lastname' => $o[3],
+                    'phonenumber' => $o[4],
+                    'steet' => $o[5],
+                    'street' => $o[6],
+                    'housenumber' => $o[7],
+                    'zip' => $o[8],
+                    'city' => $o[9],
+                    'country' => $o[10],
+                    'birthday' => $o[11],
+                    'email' => $o[12],
+                    'picture' => $o[13],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
