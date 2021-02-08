@@ -1,0 +1,16 @@
+#1 Clone the Git repository 
+git clone git@github.com:mathematikboy/Symfony-Addressbook.git
+#1 Install PHP if not installed 
+   https://www.php.net/manual/en/install.php
+#2 Install composer if you haven't installed it. 
+#3 Install SQLITE 
+    https://www.sqlitetutorial.net/download-install-sqlite/
+
+#4 Go to the project folder Symfony-Addressbook 
+
+#5 Execute the following command 
+   composer install 
+   symfony serve 
+#6 Start adding more Addresses and Try to filtem them by name , city or postal code 
+
+
