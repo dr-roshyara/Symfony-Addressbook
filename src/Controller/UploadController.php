@@ -39,11 +39,11 @@ class UploadController extends AbstractController
        
         $file 			= $request->files->get('myfile');
        
-        if (empty($file))
-        {
-            return new Response("No file specified",
-               Response::HTTP_UNPROCESSABLE_ENTITY, ['content-type' => 'text/plain']);
-        }
+        // if (empty($file))
+        // {
+        //     return new Response("No file specified",
+        //        Response::HTTP_UNPROCESSABLE_ENTITY, ['content-type' => 'text/plain']);
+        // }
         $firstname 		=$this->check_input($request->get('firstname'));
         $lastname 		=$this->check_input($request->get('lastname'));
         $phonenumber	=$this->check_input($request->get('phonenumber'));
