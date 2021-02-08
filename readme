@@ -4,6 +4,7 @@
 #2 Install PHP if not installed 
    https://www.php.net/manual/en/install.php
    php version must be 7.4+. 	
+   
 #3 Install composer if you haven't installed it.
    https://getcomposer.org/download/
 
